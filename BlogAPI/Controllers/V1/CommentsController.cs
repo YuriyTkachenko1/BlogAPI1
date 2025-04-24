@@ -1,9 +1,9 @@
-﻿using BlogAPI.Dtos;
+﻿using BlogAPI.Dtos.V1;
 using BlogAPI.Features.Comments;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BlogAPI.Controllers
+namespace BlogAPI.Controllers.V1
 {
     [ApiController]
     [Route("api/v1/[controller]")]

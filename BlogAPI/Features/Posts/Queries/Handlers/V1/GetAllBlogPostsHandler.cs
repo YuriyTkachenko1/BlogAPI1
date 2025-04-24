@@ -1,9 +1,10 @@
 ﻿using BlogAPI.Data;
+using BlogAPI.Features.Posts.Queries.V1;
 using BlogAPI.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace BlogAPI.Features.Posts
+namespace BlogAPI.Features.Posts.Queries.Handlers.V1
 {
     public class GetAllBlogPostsHandler : IRequestHandler<GetAllBlogPostsQuery, List<BlogPost>>
     {

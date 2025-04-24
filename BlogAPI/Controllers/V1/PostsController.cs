@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using BlogAPI.Features.Posts;
-using BlogAPI.Dtos;
+using BlogAPI.Dtos.V1;
+using BlogAPI.Features.Posts.Commands.V1;
+using BlogAPI.Features.Posts.Queries.V1;
 
-namespace BlogApi.Controllers
+namespace BlogAPI.Controllers.V1
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]

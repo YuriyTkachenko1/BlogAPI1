@@ -3,8 +3,9 @@ using BlogAPI.Data;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
+using BlogAPI.Features.Posts.Queries.V1;
 
-namespace BlogAPI.Features.Posts
+namespace BlogAPI.Features.Posts.Queries.Handlers.V1
 {
     public class GetBlogPostByIdHandler : IRequestHandler<GetBlogPostByIdQuery, BlogPost?>
     {

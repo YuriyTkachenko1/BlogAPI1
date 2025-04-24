@@ -2,8 +2,9 @@
 using BlogAPI.Data;
 using MediatR;
 using Microsoft.Extensions.Hosting;
+using BlogAPI.Features.Posts.Commands.V1;
 
-namespace BlogAPI.Features.Posts
+namespace BlogAPI.Features.Posts.Commands.Handlers.V1
 {
     public class CreateBlogPostHandler : IRequestHandler<CreateBlogPostCommand, int>
     {

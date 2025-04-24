@@ -1,4 +1,4 @@
-﻿using BlogAPI.Dtos;
+﻿using BlogAPI.Dtos.V1;
 using BlogAPI.Models;
 using Microsoft.Extensions.Hosting;
 
