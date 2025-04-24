@@ -3,6 +3,7 @@ using BlogAPI.Features.Posts;
 using BlogAPI.Services;
 using MediatR;
 using Microsoft.Extensions.Hosting;
+using BlogAPI.Dtos;
 
 namespace BlogAPI.Services
 {
@@ -15,9 +16,9 @@ namespace BlogAPI.Services
             _mediator = mediator;
         }
 
-        public async Task<int> CreatePostAsync(string title, string content)
+        public async Task<int> CreatePostAsync(BlogPostDto Dto)
         {
-            return await _mediator.Send(new CreateBlogPostCommand(title, content));
+            return await _mediator.Send(new CreateBlogPostCommand(Dto));
         }
 
         public async Task<BlogPost?> GetPostAsync(int id)

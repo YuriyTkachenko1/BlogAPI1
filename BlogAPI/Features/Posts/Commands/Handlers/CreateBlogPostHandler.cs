@@ -16,28 +16,29 @@ namespace BlogAPI.Features.Posts
 
         public async Task<int> Handle(CreateBlogPostCommand request, CancellationToken cancellationToken)
         {
-            var post = new BlogPost
-            {
-                Title = request.Title,
-                Content = request.Content,
-                CreatedAt = DateTime.UtcNow
-            };
-
-            await _context.BlogPosts.AddAsync(post, cancellationToken);
-
             using var transaction = await _context.Database.BeginTransactionAsync();
+
             try
             {
+                var post = new BlogPost
+                {
+                    Title = request.Dto.Title,
+                    Content = request.Dto.Content,
+                    CreatedAt = DateTime.UtcNow
+                };
+
+                await _context.BlogPosts.AddAsync(post, cancellationToken);
+
 
                 await _context.SaveChangesAsync(cancellationToken);
                 await transaction.CommitAsync();
+                return post.Id;
             }
             catch
             {
                 await transaction.RollbackAsync();
                 throw;
             }
-            return post.Id;
         }
     }
 }

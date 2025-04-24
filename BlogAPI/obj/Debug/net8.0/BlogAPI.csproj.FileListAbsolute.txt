@@ -173,3 +173,7 @@ C:\GITRepositories\BlogAPI\BlogAPI\obj\Debug\net8.0\refint\BlogAPI.dll
 C:\GITRepositories\BlogAPI\BlogAPI\obj\Debug\net8.0\BlogAPI.pdb
 C:\GITRepositories\BlogAPI\BlogAPI\obj\Debug\net8.0\BlogAPI.genruntimeconfig.cache
 C:\GITRepositories\BlogAPI\BlogAPI\obj\Debug\net8.0\ref\BlogAPI.dll
+C:\GITRepositories\BlogAPI\BlogAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+C:\GITRepositories\BlogAPI\BlogAPI\bin\Debug\net8.0\NLog.dll
+C:\GITRepositories\BlogAPI\BlogAPI\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\GITRepositories\BlogAPI\BlogAPI\bin\Debug\net8.0\NLog.Web.AspNetCore.dll

@@ -15,14 +15,24 @@ namespace BlogApi.Controllers
         {
             _mediator = mediator;
         }
-
+        /// <summary>
+        /// Create new blog.
+        /// </summary>
+        /// <returns>Status Code</returns>
         [HttpPost]
         public async Task<IActionResult> CreatePost([FromBody] CreateBlogPostCommand command)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var id = await _mediator.Send(command);
             return CreatedAtAction(nameof(GetPostById), new { id }, null);
         }
 
+        /// <summary>
+        /// Gets a blog by ID.
+        /// </summary>
+        /// <returns>Status Code</returns>
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetPostById(int id)
         {
@@ -30,6 +40,30 @@ namespace BlogApi.Controllers
             if (post == null)
                 return NotFound();
             return Ok(post);
+        }
+
+        /// <summary>
+        /// Gets the list of blogs.
+        /// </summary>
+        /// <returns>List of blogs</returns>
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var posts = await _mediator.Send(new GetAllBlogPostsQuery());
+            return Ok(posts);
+        }
+
+        /// <summary>
+        /// Deletes blog by ID.
+        /// </summary>
+        /// <returns>Status Code</returns>
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _mediator.Send(new DeleteBlogPostCommand(id));
+            if (!result)
+                return NotFound();
+            return NoContent();
         }
     }
 }
