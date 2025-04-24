@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using BlogAPI.Features.Posts;
+using BlogAPI.Dtos;
 
 namespace BlogApi.Controllers
 {
@@ -28,7 +29,21 @@ namespace BlogApi.Controllers
             var id = await _mediator.Send(command);
             return CreatedAtAction(nameof(GetPostById), new { id }, null);
         }
+        /// <summary>
+        /// Update the blog by ID.
+        /// </summary>
+        /// <returns>Status Code</returns>
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id, [FromBody] BlogPostDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
+            var result = await _mediator.Send(new UpdateBlogPostCommand(id, dto));
+            if (!result)
+                return NotFound();
+            return NoContent();
+        }
         /// <summary>
         /// Gets a blog by ID.
         /// </summary>

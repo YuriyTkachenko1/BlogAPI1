@@ -6,13 +6,13 @@ namespace BlogAPI.Dtos
     {
         [Required]
         [StringLength(50)]
-        public string Author { get; set; } = string.Empty;
+        public string AuthorName { get; set; } = string.Empty;
 
         [Required]
         [MinLength(1)]
-        public string Message { get; set; } = string.Empty;
+        public string Text { get; set; } = string.Empty;
 
         [Required]
-        public int BlogPostId { get; set; }
+        public int PostId { get; set; }
     }
 }

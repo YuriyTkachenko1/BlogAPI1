@@ -2,6 +2,6 @@
 {
     public interface IAuditService
     {
-        Task LogAsync(string action, int entityId);
+        Task LogAsync(string action, int entityId, string? user = null);
     }
 }

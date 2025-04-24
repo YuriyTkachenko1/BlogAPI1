@@ -3,46 +3,6 @@
   "WorkspaceRootPath": "C:\\GITRepositories\\BlogAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\posts\\commands\\handlers\\deleteblogposthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\posts\\commands\\handlers\\deleteblogposthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\services\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\services\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\posts\\commands\\createblogpostcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\posts\\commands\\createblogpostcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\services\\auditservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\services\\auditservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\services\\iauditservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\services\\iauditservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\posts\\commands\\deleteblogpostcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\posts\\commands\\deleteblogpostcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\middleware\\auditmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\middleware\\auditmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\posts\\queries\\handlers\\getallblogpostshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\posts\\queries\\handlers\\getallblogpostshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,28 +11,68 @@
       "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\posts\\queries\\getallblogpostsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\posts\\commands\\handlers\\createblogposthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\posts\\commands\\handlers\\createblogposthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\queries\\handlers\\getallcommentshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\queries\\handlers\\getallcommentshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\queries\\handlers\\getcommentbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\queries\\handlers\\getcommentbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\commands\\handlers\\deletecommenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\commands\\handlers\\deletecommenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\commands\\handlers\\updatecommenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\commands\\handlers\\updatecommenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\commands\\handlers\\createcommenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\commands\\handlers\\createcommenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\dtos\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\dtos\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\dtos\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\dtos\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\commands\\updatecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\commands\\updatecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\commands\\deletecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\commands\\deletecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\commands\\createcommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\commands\\createcommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\queries\\getcommentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\queries\\getcommentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\comments\\queries\\getallcommentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\comments\\queries\\getallcommentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\middleware\\auditmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\middleware\\auditmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\posts\\queries\\handlers\\getblogpostbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\features\\posts\\queries\\handlers\\getblogpostbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,102 +82,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IBlogService.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Services\\IBlogService.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Services\\IBlogService.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Services\\IBlogService.cs",
-              "RelativeToolTip": "BlogAPI\\Services\\IBlogService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T02:50:31.332Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BlogService.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Services\\BlogService.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Services\\BlogService.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Services\\BlogService.cs",
-              "RelativeToolTip": "BlogAPI\\Services\\BlogService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "GetCommentByIdHandler.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Queries\\Handlers\\GetCommentByIdHandler.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Queries\\Handlers\\GetCommentByIdHandler.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Queries\\Handlers\\GetCommentByIdHandler.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Queries\\Handlers\\GetCommentByIdHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T02:47:47.119Z",
+              "WhenOpened": "2025-04-24T15:41:23.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AuditService.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Services\\AuditService.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Services\\AuditService.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Services\\AuditService.cs",
-              "RelativeToolTip": "BlogAPI\\Services\\AuditService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "DeleteCommentHandler.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\Handlers\\DeleteCommentHandler.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Commands\\Handlers\\DeleteCommentHandler.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\Handlers\\DeleteCommentHandler.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Commands\\Handlers\\DeleteCommentHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwC8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T02:42:37.358Z",
+              "WhenOpened": "2025-04-24T15:40:14.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "IAuditService.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Services\\IAuditService.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Services\\IAuditService.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Services\\IAuditService.cs",
-              "RelativeToolTip": "BlogAPI\\Services\\IAuditService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Title": "UpdateCommentHandler.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\Handlers\\UpdateCommentHandler.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Commands\\Handlers\\UpdateCommentHandler.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\Handlers\\UpdateCommentHandler.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Commands\\Handlers\\UpdateCommentHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T02:39:54.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DeleteBlogPostHandler.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Commands\\Handlers\\DeleteBlogPostHandler.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Features\\Posts\\Commands\\Handlers\\DeleteBlogPostHandler.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Commands\\Handlers\\DeleteBlogPostHandler.cs",
-              "RelativeToolTip": "BlogAPI\\Features\\Posts\\Commands\\Handlers\\DeleteBlogPostHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T01:15:04.205Z",
+              "WhenOpened": "2025-04-24T15:37:30.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "GetAllBlogPostsHandler.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetAllBlogPostsHandler.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetAllBlogPostsHandler.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetAllBlogPostsHandler.cs",
-              "RelativeToolTip": "BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetAllBlogPostsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Models\\Comment.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Models\\Comment.cs",
+              "RelativeToolTip": "BlogAPI\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T01:12:14.686Z",
+              "WhenOpened": "2025-04-24T15:31:24.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "DeleteBlogPostCommand.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Commands\\DeleteBlogPostCommand.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Features\\Posts\\Commands\\DeleteBlogPostCommand.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Commands\\DeleteBlogPostCommand.cs",
-              "RelativeToolTip": "BlogAPI\\Features\\Posts\\Commands\\DeleteBlogPostCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "CreateCommentHandler.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\Handlers\\CreateCommentHandler.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Commands\\Handlers\\CreateCommentHandler.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\Handlers\\CreateCommentHandler.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Commands\\Handlers\\CreateCommentHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T01:10:39.684Z",
+              "WhenOpened": "2025-04-24T15:30:16.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
+              "Title": "GetAllCommentsQuery.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Queries\\GetAllCommentsQuery.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Queries\\GetAllCommentsQuery.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Queries\\GetAllCommentsQuery.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Queries\\GetAllCommentsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T15:28:51.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetCommentByIdQuery.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Queries\\GetCommentByIdQuery.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Queries\\GetCommentByIdQuery.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Queries\\GetCommentByIdQuery.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Queries\\GetCommentByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T15:28:05.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Program.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Program.cs",
+              "RelativeToolTip": "BlogAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T19:07:49.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GetAllBlogPostsQuery.cs",
               "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Queries\\GetAllBlogPostsQuery.cs",
               "RelativeDocumentMoniker": "BlogAPI\\Features\\Posts\\Queries\\GetAllBlogPostsQuery.cs",
@@ -190,128 +207,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PostsController.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Controllers\\PostsController.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Controllers\\PostsController.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Controllers\\PostsController.cs",
-              "RelativeToolTip": "BlogAPI\\Controllers\\PostsController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAUwDgAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GetAllBlogPostsHandler.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetAllBlogPostsHandler.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetAllBlogPostsHandler.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetAllBlogPostsHandler.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetAllBlogPostsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:41:22.665Z",
+              "WhenOpened": "2025-04-24T01:12:14.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAllCommentsHandler.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Queries\\Handlers\\GetAllCommentsHandler.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Queries\\Handlers\\GetAllCommentsHandler.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Queries\\Handlers\\GetAllCommentsHandler.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Queries\\Handlers\\GetAllCommentsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T15:42:13.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateBlogPostCommand.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Commands\\CreateBlogPostCommand.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Features\\Posts\\Commands\\CreateBlogPostCommand.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Commands\\CreateBlogPostCommand.cs",
-              "RelativeToolTip": "BlogAPI\\Features\\Posts\\Commands\\CreateBlogPostCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAoAAAAAAAAAA==",
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "BlogAPI\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:32:35.97Z",
+              "WhenOpened": "2025-04-24T15:43:45.284Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeleteCommentCommand.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\DeleteCommentCommand.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Commands\\DeleteCommentCommand.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\DeleteCommentCommand.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Commands\\DeleteCommentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T15:27:17.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateCommentCommand.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\UpdateCommentCommand.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Commands\\UpdateCommentCommand.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\UpdateCommentCommand.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Commands\\UpdateCommentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T15:26:16.018Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "CreateCommentCommand.cs",
+              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\CreateCommentCommand.cs",
+              "RelativeDocumentMoniker": "BlogAPI\\Features\\Comments\\Commands\\CreateCommentCommand.cs",
+              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Comments\\Commands\\CreateCommentCommand.cs",
+              "RelativeToolTip": "BlogAPI\\Features\\Comments\\Commands\\CreateCommentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T15:25:21.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CommentDto.cs",
               "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Dtos\\CommentDto.cs",
               "RelativeDocumentMoniker": "BlogAPI\\Dtos\\CommentDto.cs",
               "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Dtos\\CommentDto.cs",
               "RelativeToolTip": "BlogAPI\\Dtos\\CommentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T23:29:57.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BlogPostDto.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Dtos\\BlogPostDto.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Dtos\\BlogPostDto.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Dtos\\BlogPostDto.cs",
-              "RelativeToolTip": "BlogAPI\\Dtos\\BlogPostDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:28:16.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Program.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Program.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Program.cs",
-              "RelativeToolTip": "BlogAPI\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T19:07:49.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "AuditMiddleware.cs",
               "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Middleware\\AuditMiddleware.cs",
               "RelativeDocumentMoniker": "BlogAPI\\Middleware\\AuditMiddleware.cs",
               "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Middleware\\AuditMiddleware.cs",
               "RelativeToolTip": "BlogAPI\\Middleware\\AuditMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T01:14:48.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "BlogAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "BlogAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-23T19:20:25.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T01:14:48.167Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "GetBlogPostByIdHandler.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetBlogPostByIdHandler.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetBlogPostByIdHandler.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetBlogPostByIdHandler.cs",
-              "RelativeToolTip": "BlogAPI\\Features\\Posts\\Queries\\Handlers\\GetBlogPostByIdHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:14:26.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateBlogPostHandler.cs",
-              "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Commands\\Handlers\\CreateBlogPostHandler.cs",
-              "RelativeDocumentMoniker": "BlogAPI\\Features\\Posts\\Commands\\Handlers\\CreateBlogPostHandler.cs",
-              "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Features\\Posts\\Commands\\Handlers\\CreateBlogPostHandler.cs",
-              "RelativeToolTip": "BlogAPI\\Features\\Posts\\Commands\\Handlers\\CreateBlogPostHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:13:49.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\appsettings.json",
               "RelativeDocumentMoniker": "BlogAPI\\appsettings.json",
@@ -319,8 +318,7 @@
               "RelativeToolTip": "BlogAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-22T19:17:43.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T19:17:43.826Z"
             }
           ]
         }
