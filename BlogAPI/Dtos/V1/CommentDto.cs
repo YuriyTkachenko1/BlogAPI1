@@ -9,7 +9,7 @@ namespace BlogAPI.Dtos.V1
         public string AuthorName { get; set; } = string.Empty;
 
         [Required]
-        [MinLength(1)]
+        [StringLength(1000, MinimumLength = 1)]
         public string Text { get; set; } = string.Empty;
 
         [Required]

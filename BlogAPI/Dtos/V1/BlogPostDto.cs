@@ -9,7 +9,7 @@ namespace BlogAPI.Dtos.V1
         public string Title { get; set; } = string.Empty;
 
         [Required]
-        [MinLength(10)]
+        [StringLength(10000, MinimumLength = 10)]
         public string Content { get; set; } = string.Empty;
     }
 }
