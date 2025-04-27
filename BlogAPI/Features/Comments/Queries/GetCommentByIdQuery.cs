@@ -1,7 +1,7 @@
-﻿using BlogAPI.Models;
+﻿using BlogAPI.Dtos.V1;
 using MediatR;
 
 namespace BlogAPI.Features.Comments
 {
-    public record GetCommentByIdQuery(int Id) : IRequest<Comment?>;
+    public record GetCommentByIdQuery(int Id) : IRequest<CommentResponseDto?>;
 }

@@ -10,16 +10,19 @@ namespace BlogAPI.Features.Comments
         private readonly BlogDbContext _context;
         private readonly IAuditService _auditService;
         private readonly ILogger<CreateCommentHandler> _logger;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public CreateCommentHandler(BlogDbContext context, IAuditService auditService, ILogger<CreateCommentHandler> logger)
+        public CreateCommentHandler(BlogDbContext context, IAuditService auditService, ILogger<CreateCommentHandler> logger, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
             _auditService = auditService;
             _logger = logger;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<int> Handle(CreateCommentCommand request, CancellationToken cancellationToken)
         {
+            var username = _httpContextAccessor.HttpContext?.User?.Identity?.Name ?? "UnknownUser";
             using var transaction = await _context.Database.BeginTransactionAsync(cancellationToken);
             try
             {
@@ -27,7 +30,9 @@ namespace BlogAPI.Features.Comments
                 {
                     AuthorName = request.Dto.AuthorName,
                     Text = request.Dto.Text,
-                    PostId = request.Dto.PostId
+                    PostId = request.Dto.PostId,
+                    CreatedAt = DateTime.UtcNow,
+                    CreatedBy = username
                 };
 
                 await _context.Comments.AddAsync(comment, cancellationToken);

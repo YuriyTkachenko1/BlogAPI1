@@ -1,4 +1,5 @@
-﻿using BlogAPI.Dtos.V1;
+﻿using Asp.Versioning;
+using BlogAPI.Dtos.V1;
 using BlogAPI.Features.Comments;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace BlogAPI.Controllers.V1
 {
     [ApiController]
-    [Route("api/v1/[controller]")]
+    [ApiVersion(1)]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class CommentsController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -17,6 +19,7 @@ namespace BlogAPI.Controllers.V1
         }
 
         [HttpPost]
+        [MapToApiVersion(1)]
         public async Task<IActionResult> Create([FromBody] CommentDto dto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -24,15 +27,8 @@ namespace BlogAPI.Controllers.V1
             return CreatedAtAction(nameof(GetById), new { id }, id);
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, [FromBody] CommentDto dto)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-            var result = await _mediator.Send(new UpdateCommentCommand(id, dto));
-            return result ? NoContent() : NotFound();
-        }
-
         [HttpGet("{id:int}")]
+        [MapToApiVersion(1)]
         public async Task<IActionResult> GetById(int id)
         {
             var comment = await _mediator.Send(new GetCommentByIdQuery(id));
@@ -40,17 +36,19 @@ namespace BlogAPI.Controllers.V1
         }
 
         [HttpGet]
+        [MapToApiVersion(1)]
         public async Task<IActionResult> GetAll()
         {
             var comments = await _mediator.Send(new GetAllCommentsQuery());
             return Ok(comments);
         }
 
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpGet("by-post/{postId:int}")]
+        [MapToApiVersion(1)]
+        public async Task<IActionResult> GetByBlogPostId(int postId)
         {
-            var result = await _mediator.Send(new DeleteCommentCommand(id));
-            return result ? NoContent() : NotFound();
+            var comments = await _mediator.Send(new GetCommentsByBlogPostIdQuery(postId));
+            return Ok(comments);
         }
     }
 }

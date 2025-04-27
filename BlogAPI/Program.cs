@@ -13,6 +13,7 @@ using BlogAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using NLog.Web;
 using NLog;
+using Asp.Versioning;
 
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
@@ -32,31 +33,39 @@ try
 
     builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
     builder.Services.AddControllers()
+
+
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
         options.JsonSerializerOptions.WriteIndented = true;
     });
-    builder.Services.AddScoped<IBlogService, BlogService>();
-    builder.Services.AddScoped<IAuditService, AuditService>();
-    builder.Services.AddControllers();
-    builder.Services.AddEndpointsApiExplorer();
+
     builder.Services.AddApiVersioning(options =>
     {
-        options.AssumeDefaultVersionWhenUnspecified = true;
         options.DefaultApiVersion = new ApiVersion(1, 0);
         options.ReportApiVersions = true;
-    });
-    builder.Services.AddVersionedApiExplorer(options =>
-    {
-        options.GroupNameFormat = "'v'VVV"; // e.g., v1
-        options.SubstituteApiVersionInUrl = true;
-    });
+        options.AssumeDefaultVersionWhenUnspecified = true;
+        options.ApiVersionReader = ApiVersionReader.Combine(
+            new UrlSegmentApiVersionReader(),
+            new QueryStringApiVersionReader("version"));
+    })
+        .AddMvc()
+        .AddApiExplorer(options =>
+        {
+            options.GroupNameFormat = "'v'V"; // e.g., v1
+            options.SubstituteApiVersionInUrl = true;
+        });
+
+    builder.Services.AddEndpointsApiExplorer(); //What is it??
+    builder.Services.AddHttpContextAccessor();
+
     builder.Services.AddSwaggerGen(c =>
     {
         c.SwaggerDoc("v1", new OpenApiInfo { Title = "Blog API", Version = "v1" });
     });
 
+    builder.Services.AddScoped<IAuditService, AuditService>();
     var app = builder.Build();
 
     // Middleware

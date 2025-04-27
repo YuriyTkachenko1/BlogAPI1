@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using BlogAPI.Models;
 
 namespace BlogAPI.Dtos.V1
 {
@@ -9,7 +10,7 @@ namespace BlogAPI.Dtos.V1
         public string Title { get; set; } = string.Empty;
 
         [Required]
-        [StringLength(10000, MinimumLength = 10)]
+        [MinLength(10)]
         public string Content { get; set; } = string.Empty;
     }
 }

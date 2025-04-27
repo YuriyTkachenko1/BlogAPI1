@@ -10,16 +10,19 @@ namespace BlogAPI.Features.Posts.Commands.Handlers.V1
         private readonly BlogDbContext _context;
         private readonly IAuditService _auditService;
         private readonly ILogger<UpdateBlogPostHandler> _logger;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public UpdateBlogPostHandler(BlogDbContext context, IAuditService auditService, ILogger<UpdateBlogPostHandler> logger)
+        public UpdateBlogPostHandler(BlogDbContext context, IAuditService auditService, ILogger<UpdateBlogPostHandler> logger, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
             _auditService = auditService;
             _logger = logger;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<bool> Handle(UpdateBlogPostCommand request, CancellationToken cancellationToken)
         {
+            var username = _httpContextAccessor.HttpContext?.User?.Identity?.Name ?? "UnknownUser";
             using var transaction = await _context.Database.BeginTransactionAsync(cancellationToken);
             try
             {
@@ -33,6 +36,8 @@ namespace BlogAPI.Features.Posts.Commands.Handlers.V1
 
                 post.Title = request.Dto.Title;
                 post.Content = request.Dto.Content;
+                post.ModifiedAt = DateTime.UtcNow;
+                post.ModifiedBy = username;
 
                 _context.BlogPosts.Update(post);
                 await _context.SaveChangesAsync(cancellationToken);

@@ -4,12 +4,13 @@ using BlogAPI.Features.Posts;
 using BlogAPI.Dtos.V1;
 using BlogAPI.Features.Posts.Commands.V1;
 using BlogAPI.Features.Posts.Queries.V1;
+using Asp.Versioning;
 
 namespace BlogAPI.Controllers.V1
 {
     [ApiController]
+    [ApiVersion(1)]
     [Route("api/v{version:apiVersion}/[controller]")]
-    [ApiVersion("1.0")]
     public class PostsController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -23,12 +24,13 @@ namespace BlogAPI.Controllers.V1
         /// </summary>
         /// <returns>Status Code</returns>
         [HttpPost]
-        public async Task<IActionResult> CreatePost([FromBody] CreateBlogPostCommand command)
+        [MapToApiVersion(1)]
+        public async Task<IActionResult> CreatePost([FromBody] BlogPostDto Dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var id = await _mediator.Send(command);
+            var id = await _mediator.Send(new CreateBlogPostCommand(Dto));
             return CreatedAtAction(nameof(GetPostById), new { id }, null);
         }
         /// <summary>
@@ -36,6 +38,7 @@ namespace BlogAPI.Controllers.V1
         /// </summary>
         /// <returns>Status Code</returns>
         [HttpPut("{id:int}")]
+        [MapToApiVersion(1)]
         public async Task<IActionResult> Update(int id, [FromBody] BlogPostDto dto)
         {
             if (!ModelState.IsValid)
@@ -51,6 +54,7 @@ namespace BlogAPI.Controllers.V1
         /// </summary>
         /// <returns>Status Code</returns>
         [HttpGet("{id:int}")]
+        [MapToApiVersion(1)]
         public async Task<IActionResult> GetPostById(int id)
         {
             var post = await _mediator.Send(new GetBlogPostByIdQuery(id));
@@ -64,6 +68,7 @@ namespace BlogAPI.Controllers.V1
         /// </summary>
         /// <returns>List of blogs</returns>
         [HttpGet]
+        [MapToApiVersion(1)]
         public async Task<IActionResult> Get()
         {
             var posts = await _mediator.Send(new GetAllBlogPostsQuery());
@@ -75,6 +80,7 @@ namespace BlogAPI.Controllers.V1
         /// </summary>
         /// <returns>Status Code</returns>
         [HttpDelete("{id:int}")]
+        [MapToApiVersion(1)]
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _mediator.Send(new DeleteBlogPostCommand(id));

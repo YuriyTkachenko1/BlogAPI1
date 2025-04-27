@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.Extensions.Hosting;
+﻿using BlogAPI.Models;
+using System.ComponentModel.DataAnnotations;
 
-namespace BlogAPI.Models
+namespace BlogAPI.Dtos.V1
 {
-    public class Comment
+    public class CommentResponseDto
     {
         public int Id { get; set; }
         [Required]
@@ -14,7 +14,6 @@ namespace BlogAPI.Models
         public string Text { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         [MaxLength(50)]
-        public string CreatedBy { get; set; } = string.Empty;
 
         public int PostId { get; set; }
         public BlogPost BlogPost { get; set; } = null!;
