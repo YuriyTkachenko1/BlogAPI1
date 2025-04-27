@@ -1,7 +1,7 @@
 ﻿using BlogAPI.Dtos.V1;
 using MediatR;
 
-namespace BlogAPI.Features.Posts.Queries.V1
+namespace BlogAPI.Features.Posts
 {
     public record GetAllBlogPostsQuery() : IRequest<List<BlogPostResponseDto>>;
 }

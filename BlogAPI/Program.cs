@@ -57,7 +57,7 @@ try
             options.SubstituteApiVersionInUrl = true;
         });
 
-    builder.Services.AddEndpointsApiExplorer(); //What is it??
+    builder.Services.AddEndpointsApiExplorer(); 
     builder.Services.AddHttpContextAccessor();
 
     builder.Services.AddSwaggerGen(c =>

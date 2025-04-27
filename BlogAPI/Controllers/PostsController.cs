@@ -2,11 +2,9 @@
 using MediatR;
 using BlogAPI.Features.Posts;
 using BlogAPI.Dtos.V1;
-using BlogAPI.Features.Posts.Commands.V1;
-using BlogAPI.Features.Posts.Queries.V1;
 using Asp.Versioning;
 
-namespace BlogAPI.Controllers.V1
+namespace BlogAPI.Controllers
 {
     [ApiController]
     [ApiVersion(1)]
@@ -22,7 +20,7 @@ namespace BlogAPI.Controllers.V1
         /// <summary>
         /// Create new blog.
         /// </summary>
-        /// <returns>Status Code</returns>
+        /// <returns>New ID</returns>
         [HttpPost]
         [MapToApiVersion(1)]
         public async Task<IActionResult> CreatePost([FromBody] BlogPostDto Dto)
@@ -31,7 +29,7 @@ namespace BlogAPI.Controllers.V1
                 return BadRequest(ModelState);
 
             var id = await _mediator.Send(new CreateBlogPostCommand(Dto));
-            return CreatedAtAction(nameof(GetPostById), new { id }, null);
+            return CreatedAtAction(nameof(GetPostById), new { id }, id);
         }
         /// <summary>
         /// Update the blog by ID.
@@ -52,7 +50,7 @@ namespace BlogAPI.Controllers.V1
         /// <summary>
         /// Gets a blog by ID.
         /// </summary>
-        /// <returns>Status Code</returns>
+        /// <returns>The post record</returns>
         [HttpGet("{id:int}")]
         [MapToApiVersion(1)]
         public async Task<IActionResult> GetPostById(int id)

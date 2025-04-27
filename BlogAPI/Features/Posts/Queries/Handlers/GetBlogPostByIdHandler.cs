@@ -3,11 +3,10 @@ using BlogAPI.Data;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
-using BlogAPI.Features.Posts.Queries.V1;
 using BlogAPI.Dtos.V1;
 using BlogAPI.Services;
 
-namespace BlogAPI.Features.Posts.Queries.Handlers.V1
+namespace BlogAPI.Features.Posts
 {
 
     public class GetBlogPostByIdHandler : IRequestHandler<GetBlogPostByIdQuery, BlogPostResponseDto?>

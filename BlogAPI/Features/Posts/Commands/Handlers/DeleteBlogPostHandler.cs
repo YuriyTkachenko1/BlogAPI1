@@ -1,9 +1,9 @@
 ﻿using BlogAPI.Data;
-using BlogAPI.Features.Posts.Commands.V1;
+using BlogAPI.Features.Posts;
 using BlogAPI.Services;
 using MediatR;
 
-namespace BlogAPI.Features.Posts.Commands.Handlers.V1
+namespace BlogAPI.Features.Posts
 {
     public class DeleteBlogPostHandler : IRequestHandler<DeleteBlogPostCommand, bool>
     {

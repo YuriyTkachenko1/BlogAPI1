@@ -4,7 +4,7 @@ using BlogAPI.Features.Comments;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BlogAPI.Controllers.V1
+namespace BlogAPI.Controllers
 {
     [ApiController]
     [ApiVersion(1)]
@@ -18,6 +18,10 @@ namespace BlogAPI.Controllers.V1
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Create new comment.
+        /// </summary>
+        /// <returns>New ID</returns>
         [HttpPost]
         [MapToApiVersion(1)]
         public async Task<IActionResult> Create([FromBody] CommentDto dto)
@@ -27,6 +31,10 @@ namespace BlogAPI.Controllers.V1
             return CreatedAtAction(nameof(GetById), new { id }, id);
         }
 
+        /// <summary>
+        /// Gets a comment by ID.
+        /// </summary>
+        /// <returns>The comment record</returns>
         [HttpGet("{id:int}")]
         [MapToApiVersion(1)]
         public async Task<IActionResult> GetById(int id)
@@ -35,6 +43,10 @@ namespace BlogAPI.Controllers.V1
             return comment == null ? NotFound() : Ok(comment);
         }
 
+        /// <summary>
+        /// Gets the list of comments.
+        /// </summary>
+        /// <returns>List of comments</returns>
         [HttpGet]
         [MapToApiVersion(1)]
         public async Task<IActionResult> GetAll()
@@ -43,6 +55,10 @@ namespace BlogAPI.Controllers.V1
             return Ok(comments);
         }
 
+        /// <summary>
+        /// Gets the list of comments filtered by post ID.
+        /// </summary>
+        /// <returns>List of comments</returns>
         [HttpGet("by-post/{postId:int}")]
         [MapToApiVersion(1)]
         public async Task<IActionResult> GetByBlogPostId(int postId)
