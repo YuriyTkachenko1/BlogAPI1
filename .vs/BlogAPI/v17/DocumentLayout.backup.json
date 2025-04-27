@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\GITRepositories\\BlogAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|solutionrelative:blogapi\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94EC468A-78C8-4DF4-BEE5-741CA2B2AA8C}|BlogAPI\\BlogAPI.csproj|c:\\gitrepositories\\blogapi\\blogapi\\features\\posts\\queries\\handlers\\getallblogpostshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,13 +90,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PostsController.cs",
               "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Controllers\\PostsController.cs",
               "RelativeDocumentMoniker": "BlogAPI\\Controllers\\PostsController.cs",
               "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Controllers\\PostsController.cs*",
               "RelativeToolTip": "BlogAPI\\Controllers\\PostsController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T20:20:59.585Z",
               "EditorCaption": ""
@@ -194,13 +194,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CommentsController.cs",
               "DocumentMoniker": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Controllers\\CommentsController.cs",
               "RelativeDocumentMoniker": "BlogAPI\\Controllers\\CommentsController.cs",
               "ToolTip": "C:\\GITRepositories\\BlogAPI\\BlogAPI\\Controllers\\CommentsController.cs",
               "RelativeToolTip": "BlogAPI\\Controllers\\CommentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T15:43:45.284Z",
               "EditorCaption": ""
