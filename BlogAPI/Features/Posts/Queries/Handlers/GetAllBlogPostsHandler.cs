@@ -33,7 +33,14 @@ namespace BlogAPI.Features.Posts
                         Title = p.Title,
                         Content = p.Content,
                         CreatedAt = p.CreatedAt,
-                        Comments = p.Comments
+                        Comments = p.Comments.Select(c => new CommentResponseDto
+                        {
+                            Id = c.Id,
+                            AuthorName = c.AuthorName,
+                            Text = c.Text,
+                            CreatedAt = c.CreatedAt,
+                            PostId = c.PostId
+                        }).ToList()
                     })
                     .ToListAsync(cancellationToken);
 

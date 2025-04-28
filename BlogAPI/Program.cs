@@ -15,6 +15,7 @@ using NLog.Web;
 using NLog;
 using Asp.Versioning;
 
+
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
 try
@@ -34,11 +35,12 @@ try
     builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
     builder.Services.AddControllers()
 
-
     .AddJsonOptions(options =>
     {
-        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-        options.JsonSerializerOptions.WriteIndented = true;
+        //options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+        //options.JsonSerializerOptions.WriteIndented = true;
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
     });
 
     builder.Services.AddApiVersioning(options =>
@@ -57,12 +59,16 @@ try
             options.SubstituteApiVersionInUrl = true;
         });
 
+    builder.Services.AddScoped<IBlogPostService, BlogPostService>();
+
+    //Generates OpenAPI metadata from your Controllers
     builder.Services.AddEndpointsApiExplorer(); 
     builder.Services.AddHttpContextAccessor();
 
     builder.Services.AddSwaggerGen(c =>
     {
         c.SwaggerDoc("v1", new OpenApiInfo { Title = "Blog API", Version = "v1" });
+        c.SwaggerDoc("v2", new OpenApiInfo { Title = "Blog API", Version = "v2" });
     });
 
     builder.Services.AddScoped<IAuditService, AuditService>();
@@ -75,7 +81,12 @@ try
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
-        app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blog API V1"));
+        app.UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blog API V1");
+            c.SwaggerEndpoint("/swagger/v2/swagger.json", "Blog API V2");
+            }
+        );
     }
 
     app.UseHttpsRedirection();

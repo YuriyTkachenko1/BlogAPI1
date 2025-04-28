@@ -16,6 +16,6 @@ namespace BlogAPI.Dtos.V1
         [MaxLength(50)]
 
         public int PostId { get; set; }
-        public BlogPost BlogPost { get; set; } = null!;
+        //public BlogPost BlogPost { get; set; } = null!;
     }
 }

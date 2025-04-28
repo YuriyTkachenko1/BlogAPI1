@@ -10,12 +10,14 @@ namespace BlogAPI.Features.Posts
         private readonly BlogDbContext _context;
         private readonly IAuditService _auditService;
         private readonly ILogger<DeleteBlogPostHandler> _logger;
+        private readonly IBlogPostService _blogPostService;
 
-        public DeleteBlogPostHandler(BlogDbContext context, IAuditService auditService, ILogger<DeleteBlogPostHandler> logger)
+        public DeleteBlogPostHandler(BlogDbContext context, IAuditService auditService, ILogger<DeleteBlogPostHandler> logger, IBlogPostService blogPostService)
         {
             _context = context;
             _auditService = auditService;
             _logger = logger;
+            _blogPostService = blogPostService;
         }
 
         public async Task<bool> Handle(DeleteBlogPostCommand request, CancellationToken cancellationToken)
@@ -24,6 +26,13 @@ namespace BlogAPI.Features.Posts
             using var transaction = await _context.Database.BeginTransactionAsync(cancellationToken);
             try
             {
+                var postExists = await _blogPostService.IDExistsAsync(request.Id);
+                if (!postExists)
+                {
+                    _logger.LogWarning("BlogPost with ID {PostId} does not exist", request.Id);
+                    await transaction.RollbackAsync(cancellationToken);
+                    return false;
+                }
                 var post = await _context.BlogPosts.FindAsync(new object[] { request.Id }, cancellationToken);
                 if (post == null)
                 {

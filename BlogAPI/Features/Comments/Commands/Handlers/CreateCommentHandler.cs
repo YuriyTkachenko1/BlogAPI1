@@ -11,13 +11,15 @@ namespace BlogAPI.Features.Comments
         private readonly IAuditService _auditService;
         private readonly ILogger<CreateCommentHandler> _logger;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IBlogPostService _blogPostService;
 
-        public CreateCommentHandler(BlogDbContext context, IAuditService auditService, ILogger<CreateCommentHandler> logger, IHttpContextAccessor httpContextAccessor)
+        public CreateCommentHandler(BlogDbContext context, IAuditService auditService, ILogger<CreateCommentHandler> logger, IHttpContextAccessor httpContextAccessor, IBlogPostService blogPostService)
         {
             _context = context;
             _auditService = auditService;
             _logger = logger;
             _httpContextAccessor = httpContextAccessor;
+            _blogPostService = blogPostService;
         }
 
         public async Task<int> Handle(CreateCommentCommand request, CancellationToken cancellationToken)
@@ -26,6 +28,13 @@ namespace BlogAPI.Features.Comments
             using var transaction = await _context.Database.BeginTransactionAsync(cancellationToken);
             try
             {
+                var postExists = await _blogPostService.IDExistsAsync(request.Dto.PostId);
+                if (!postExists)
+                {
+                    _logger.LogWarning("BlogPost with ID {PostId} does not exist", request.Dto.PostId);
+                    await transaction.RollbackAsync(cancellationToken);
+                    return -1;
+                }
                 var comment = new Comment
                 {
                     AuthorName = request.Dto.AuthorName,

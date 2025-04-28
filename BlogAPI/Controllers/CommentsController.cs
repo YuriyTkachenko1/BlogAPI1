@@ -27,7 +27,11 @@ namespace BlogAPI.Controllers
         public async Task<IActionResult> Create([FromBody] CommentDto dto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
+
             var id = await _mediator.Send(new CreateCommentCommand(dto));
+
+            if (id == -1) return BadRequest("Blog post not found");
+
             return CreatedAtAction(nameof(GetById), new { id }, id);
         }
 

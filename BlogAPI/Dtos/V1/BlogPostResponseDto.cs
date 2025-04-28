@@ -13,6 +13,6 @@ namespace BlogAPI.Dtos.V1
         public string Content { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         [MaxLength(50)]
-        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+        public ICollection<CommentResponseDto> Comments { get; set; } = new List<CommentResponseDto>();
     }
 }

@@ -45,7 +45,14 @@ namespace BlogAPI.Features.Posts
                     Title = post.Title,
                     Content = post.Content,
                     CreatedAt = post.CreatedAt,
-                    Comments = post.Comments
+                    Comments = post.Comments.Select(c => new CommentResponseDto
+                    {
+                        Id = c.Id,
+                        AuthorName = c.AuthorName,
+                        Text = c.Text,
+                        CreatedAt = c.CreatedAt,
+                        PostId = c.PostId
+                    }).ToList()
                 };
 
                 await _auditService.LogAsync("Fetched BlogPost by Id", request.Id);

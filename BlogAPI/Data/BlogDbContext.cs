@@ -16,7 +16,7 @@ namespace BlogAPI.Data
                 .HasMany(p => p.Comments)
                 .WithOne(c => c.BlogPost)
                 .HasForeignKey(c => c.PostId)
-                .OnDelete(DeleteBehavior.Cascade); ;
+                .OnDelete(DeleteBehavior.Cascade); 
         }
     }
 }

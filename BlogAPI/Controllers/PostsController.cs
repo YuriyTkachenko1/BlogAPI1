@@ -8,6 +8,7 @@ namespace BlogAPI.Controllers
 {
     [ApiController]
     [ApiVersion(1)]
+    [ApiVersion(2)]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class PostsController : ControllerBase
     {
@@ -61,6 +62,19 @@ namespace BlogAPI.Controllers
             return Ok(post);
         }
 
+        /// <summary>
+        /// Gets a blog by ID.
+        /// </summary>
+        /// <returns>The post record</returns>
+        [HttpGet("{id:int}")]
+        [MapToApiVersion(2)]
+        public async Task<IActionResult> GetPost2ById(int id)
+        {
+            var post = await _mediator.Send(new GetBlogPostByIdQuery(id));
+            if (post == null)
+                return NotFound();
+            return Ok(post);
+        }
         /// <summary>
         /// Gets the list of blogs.
         /// </summary>
