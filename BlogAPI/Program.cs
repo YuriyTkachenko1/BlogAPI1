@@ -41,6 +41,9 @@ try
         options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
     });
 
+    builder.Services.AddOpenApi("v1");
+    builder.Services.AddOpenApi("v2");
+
     builder.Services.AddApiVersioning(options =>
     {
         options.DefaultApiVersion = new ApiVersion(1, 0);
@@ -78,6 +81,7 @@ try
 
     if (app.Environment.IsDevelopment())
     {
+        app.MapOpenApi();
         app.UseSwagger();
         app.UseSwaggerUI(c =>
         {
