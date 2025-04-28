@@ -1,4 +1,4 @@
-﻿using BlogAPI.Dtos.V1;
+﻿using BlogAPI.Dtos.V2;
 using MediatR;
 
 namespace BlogAPI.Features.Posts

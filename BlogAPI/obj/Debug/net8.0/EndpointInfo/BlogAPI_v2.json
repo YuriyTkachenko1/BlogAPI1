@@ -27,6 +27,18 @@
           }
         }
       }
+    },
+    "/api/v2/Posts": {
+      "get": {
+        "tags": [
+          "Posts"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": { }

@@ -76,12 +76,24 @@ namespace BlogAPI.Controllers
             return Ok(post);
         }
         /// <summary>
-        /// Gets the list of blogs.
+        /// Gets the list of blogs with comments.
         /// </summary>
         /// <returns>List of blogs</returns>
         [HttpGet]
         [MapToApiVersion(1)]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAll()
+        {
+            var posts = await _mediator.Send(new GetAllBlogPostsCommentsQuery());
+            return Ok(posts);
+        }
+
+        /// <summary>
+        /// Gets the list of blogs.
+        /// </summary>
+        /// <returns>List of blogs</returns>
+        [HttpGet]
+        [MapToApiVersion(2)]
+        public async Task<IActionResult> GetAllShort()
         {
             var posts = await _mediator.Send(new GetAllBlogPostsQuery());
             return Ok(posts);
